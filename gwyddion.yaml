@@ -1,0 +1,5 @@
+name: gwyddion
+sources:
+- type: archive
+  url: https://datapacket.dl.sourceforge.net/project/gwyddion/gwyddion/2.53/gwyddion-2.53.tar.gz
+  sha256: d142569adc4d523e51ca53cbff19414576facb774e5f4dad88b6ec475972f081

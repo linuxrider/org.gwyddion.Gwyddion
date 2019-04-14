@@ -1,0 +1,23 @@
+name: gtkglext
+no-autogen: true
+sources:
+- type: archive
+  url: http://downloads.sourceforge.net/gtkglext/gtkglext-1.2.0.tar.gz
+  sha256: e5073f3c6b816e7fa67d359d9745a5bb5de94a628ac85f624c992925a46844f9
+# applying debian patches
+- type: patch
+  path: gtkglext-patches/01_fix_fontcache_nullderef.diff
+- type: patch
+  path: gtkglext-patches/02_fix_gtk-2.20_deprecated_symbols.diff
+- type: patch
+  path: gtkglext-patches/libGL.so.1.diff
+- type: patch
+  path: gtkglext-patches/04_glibc2.27-ftbfs.diff
+modules:
+# pangox-compat debian package
+- name: pangox-compat
+  no-autogen: true
+  sources:
+  - type: archive
+    url: http://deb.debian.org/debian/pool/main/p/pangox-compat/pangox-compat_0.0.2.orig.tar.xz
+    sha256: 552092b3b6c23f47f4beee05495d0f9a153781f62a1c4b7ec53857a37dfce046

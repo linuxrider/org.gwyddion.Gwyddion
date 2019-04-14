@@ -1,0 +1,6 @@
+01_fix_fontcache_nullderef.diff
+02_fix_gtk-2.20_deprecated_symbols.diff
+#03_gdkglext-config-h-installation-path.diff
+libGL.so.1.diff
+04_glibc2.27-ftbfs.diff
+
